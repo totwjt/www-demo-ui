@@ -1,0 +1,23 @@
+{
+  "name": "@www-demo-ui/example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:dev": "vite --mode dev",
+    "dev:uat": "vite --mode uat",
+    "dev:prod": "vite --mode prod",
+    "build:dev": "vue-tsc --noEmit && vite build --mode dev",
+    "build:uat": "vue-tsc --noEmit && vite build --mode uat",
+    "build:prod": "vue-tsc --noEmit && vite build --mode prod",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@www-demo-ui/www-demo-ui": "workspace:^1.0.0",
+    "element-plus": "^2.7.5"
+  }
+}
