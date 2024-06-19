@@ -1,0 +1,62 @@
+{
+  "private":false,
+  "main": "./lib/www-demo-ui.umd.js",
+  "module": "./lib/www-demo-ui.es.js",
+  "types": "./lib/www-demo-ui/index.d.ts",
+  "files": [
+    "./lib",
+    "package.json",
+    "README.md"
+  ],
+  "name": "www-demo-ui",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev:dev": "pnpm run -C example dev:dev",
+    "dev:uat": "pnpm run -C example dev:uat",
+    "dev:prod": "pnpm run -C example dev:prod",
+    "build:dev": "pnpm run -C example build:dev",
+    "build:uat": "pnpm run -C example build:uat",
+    "build:prod": "pnpm run -C example build:prod",
+    "preview:example": "pnpm run -C example preview",
+    "build:lib": "pnpm run -C packages/www-admin-ui build",
+    "docs:dev": "pnpm run -C docs dev",
+    "docs:build": "pnpm run -C docs build",
+    "docs:preview": "pnpm run -C docs serve",
+    "gen:component": "pnpm run -C cli gen",
+    "start:verdaccio": "pnpm verdaccio",
+    "pub:local": "pnpm publish --registry http://localhost:4873/"
+
+  },
+  "keywords": [],
+  "author": "Awwwait",
+  "license": "ISC",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "cli",
+    "docs",
+    "example"
+  ],
+  "dependencies": {
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.2.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "sass": "^1.77.5",
+    "typescript": "^5.4.5",
+    "verdaccio": "^5.31.1",
+    "vite": "^5.3.0",
+    "vue-tsc": "^2.0.21"
+  }
+}

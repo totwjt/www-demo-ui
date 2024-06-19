@@ -1,0 +1,34 @@
+{
+  "name": "@www-demo-ui/www-demo-ui",
+  "version": "1.0.0",
+  "description": "组件库入口",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ../../lib && vue-tsc --noEmit && vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@www-demo-ui/foo": "workspace:^1.0.0",
+    "@www-demo-ui/test1": "workspace:^1.0.0",
+    "@www-demo-ui/test10": "workspace:^1.0.0",
+    "@www-demo-ui/test12": "workspace:^1.0.0",
+    "@www-demo-ui/test13": "workspace:^1.0.0",
+    "@www-demo-ui/test14": "workspace:^1.0.0",
+    "@www-demo-ui/test2": "workspace:^1.0.0",
+    "@www-demo-ui/test22": "workspace:^1.0.0",
+    "@www-demo-ui/test24": "workspace:^1.0.0",
+    "@www-demo-ui/test3": "workspace:^1.0.0",
+    "@www-demo-ui/test4": "workspace:^1.0.0",
+    "@www-demo-ui/test5": "workspace:^1.0.0",
+    "@www-demo-ui/test6": "workspace:^1.0.0",
+    "@www-demo-ui/test7": "workspace:^1.0.0",
+    "@www-demo-ui/test8": "workspace:^1.0.0",
+    "@www-demo-ui/test9": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.7",
+    "vite-plugin-dts": "^3.9.1"
+  }
+}
